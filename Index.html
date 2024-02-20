@@ -1,0 +1,41 @@
+<!--Realiza una página web en la que implementaremos dos funcionalidades con Javascript:
+
+Tendremos un área de texto en el que introduciremos un texto largo y un campo de texto en el que introduciremos una palabra. Al pulsar un botón debemos mostrar cuantas veces aparece esa palabra en el texto largo.
+Tendremos otro campo de texto y varios botones para realizar las siguientes acciones: 
+Contar el número de caracteres del texto sin espacios.
+Contar el número de palabras.
+Convertir todo el texto a mayúsculas.
+Poner el texto en sentido inverso.
+Se deberá realizar la página utilizando estilos css para dar mejor aspecto.
+
+El código CSS y Javascript debe ir en archivos separados al HTML.--> 
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionalidades de Texto</title>
+    <link rel="stylesheet" href="css/Estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Funcionalidades de Texto</h1>
+        <div>
+            <textarea id="textoLargo" rows="6" cols="50" placeholder="Introduce un texto"></textarea>
+            <input type="text" id="palabra" placeholder="Introduce una palabra">
+            <button onclick="contarPalabras()">Contar apariciones de la palabra</button>
+            <p id="resultadoPalabra"></p>
+        </div>
+        <div>
+            <input type="text" id="texto" placeholder="Introduce un texto">
+            <button onclick="contarCaracteres()">Contar caracteres sin espacios</button>
+            <button onclick="contarPalabrasTexto()">Contar palabras</button>
+            <button onclick="convertirMayusculas()">Convertir a mayúsculas</button>
+            <button onclick="textoInverso()">Texto en sentido inverso</button>
+            <p id="resultado"></p>
+        </div>
+    </div>
+    <script src="js/funcion.js"></script>
+</body>
+</html>
